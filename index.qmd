@@ -1,0 +1,135 @@
+---
+format:
+  revealjs:
+    highlight-style: custom.theme
+    width: 1300
+    controls: true
+    transition: slide
+    theme: [default, styles.scss]
+    navigation-mode: vertical
+    chalkboard: true
+knitr: true
+echo: true
+eval: false
+embed-resources: false
+---
+
+# reproducible and <br/> parameterized reports 🌊 {data-background-color="#051525"}
+
+frank aragona
+
+# Situational Reports
+
+::: incremental
+-   Multiple COE sites
+-   One or more reports 
+    - in various formats (Word, HTML, PDF)
+    - [and multiple styles of those formats]{.fragment .blue}
+-   Embeded computations
+-   Avoid wasting time (copying, running code, editing, etc)
+:::
+
+```{=html}
+<!--
+# {data-background-color="#051525"}
+
+**Quarto** is the format of [a book or pamphlet]{.yellow} produced from full sheets printed with [eight pages of text, four to a side, then folded twice]{.yellow} to produce four leaves.
+
+[The earliest known European printed book is a quarto]{.yellow}, the Sibyllenbuch, believed to have been printed by Johannes Gutenberg in [1452–53]{.yellow}, before the Gutenberg Bible, surviving only as a fragment.
+
+# 
+
+::: columns
+::: {.column width="50%"}
+![https://comediassueltasusa.org/](suelta.jpg){width="350"}
+:::
+
+::: {.column width="50%"}
+![https://en.wikipedia.org/wiki/Quarto Title page of the first quarto edition of Shakespeare's Midsummer Night's Dream, 1600, from the Folger Shakespeare Library](shake.jpg){width="350"}
+:::
+:::
+
+-->
+```
+# Quarto
+
+::: {layout-ncol="2"}
+```{=html}
+<iframe width="600" height="600" src="https://intro2r.library.duke.edu/viz.html" title="Quarto Documentation" class="myframe2"></iframe>
+```
+```{=html}
+<iframe width="600" height="600" src="https://nrennie.rbind.io/blog/making-pretty-pdf-quarto/" title="Quarto PDF" class="myframe2"></iframe>
+```
+:::
+
+# Parameterized Reports
+
+
+::: {layout-ncol="2"}
+
+```{=html}
+<iframe width="500" height="600" src="https://notebooks-now.github.io/submission-quarto-full/" title="Manuscript" class="myframe2"></iframe>
+```
+some text here in this column
+
+:::{.smallframe}
+```{yaml}
+#| code-line-numbers: "|10|11|11|13-14|15-16|17-18"
+project:
+  type: manuscript
+
+manuscript:
+  article: index.qmd
+
+format:
+  html:
+    format-links: [pdf, docx]
+  docx: default
+  jats: default
+  pdf: 
+    output-file: "idk"
+  agu-pdf:
+    output-file: "agu"
+  jasa-pdf:
+    output-file: "jasa"
+```
+
+:::
+
+:::
+
+# idk
+
+::: {layout-ncol="2"}
+
+:::{.smallframe}
+```{r}
+random <- "hi"
+```
+:::
+
+:::{.smallframe}
+```{yaml}
+#| code-line-numbers: "|10|11|11|13-14|15-16|17-18"
+project:
+  type: manuscript
+
+manuscript:
+  article: index.qmd
+
+format:
+  html:
+    format-links: [pdf, docx]
+  docx: default
+  jats: default
+  pdf: 
+    output-file: "idk"
+  agu-pdf:
+    output-file: "agu"
+  jasa-pdf:
+    output-file: "jasa"
+```
+
+:::
+
+:::
