@@ -8,7 +8,7 @@
 <link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.5.22">
+  <meta name="generator" content="quarto-1.4.346">
 
   <title>index</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -30,7 +30,7 @@
     }
     /* CSS for syntax highlighting */
     pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
     pre > code.sourceCode > span:empty { height: 1.2em; }
     .sourceCode { overflow: visible; }
     code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -55,42 +55,44 @@
         -khtml-user-select: none; -moz-user-select: none;
         -ms-user-select: none; user-select: none;
         padding: 0 4px; width: 4em;
-        background-color: #051525;
-        color: #e9ecef;
+        color: #aaaaaa;
       }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #e9ecef;  padding-left: 4px; }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
     div.sourceCode
-      { color: #e9ecef; background-color: #051525; }
+      { color: #003b4f; background-color: #f1f3f5; }
     @media screen {
     pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
     }
-    code span.al { color: #ffff00; } /* Alert */
-    code span.an { color: #0066ff; font-weight: bold; font-style: italic; } /* Annotation */
-    code span.at { } /* Attribute */
-    code span.bn { color: #44aa43; } /* BaseN */
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
     code span.bu { } /* BuiltIn */
-    code span.cf { color: #43a8ed; font-weight: bold; } /* ControlFlow */
-    code span.ch { color: #049b0a; } /* Char */
-    code span.cn { } /* Constant */
-    code span.co { color: #a3c3f5; font-weight: bold; font-style: italic; } /* Comment */
-    code span.do { color: #0066ff; font-style: italic; } /* Documentation */
-    code span.dt { text-decoration: underline; } /* DataType */
-    code span.dv { color: #44aa43; } /* DecVal */
-    code span.er { color: #ffff00; font-weight: bold; } /* Error */
+    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
     code span.ex { } /* Extension */
-    code span.fl { color: #44aa43; } /* Float */
-    code span.fu { color: #e0f1bd; font-weight: bold; } /* Function */
-    code span.im { } /* Import */
-    code span.in { color: #0066ff; font-weight: bold; font-style: italic; } /* Information */
-    code span.kw { color: #43a8ed; font-weight: bold; } /* Keyword */
-    code span.op { } /* Operator */
-    code span.pp { font-weight: bold; } /* Preprocessor */
-    code span.sc { color: #049b0a; } /* SpecialChar */
-    code span.ss { color: #049b0a; } /* SpecialString */
-    code span.st { color: #049b0a; } /* String */
-    code span.va { } /* Variable */
-    code span.vs { color: #049b0a; } /* VerbatimString */
-    code span.wa { color: #ffff00; font-weight: bold; } /* Warning */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto.css">
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -98,6 +100,7 @@
   <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-codewindow/codewindow.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
@@ -390,8 +393,8 @@
     <div class="slides">
 
 
-<section id="reproducible-and-parameterized-reports" class="title-slide slide level1 center" data-background-color="#051525">
-<h1>reproducible and <br> parameterized reports 🌊</h1>
+<section id="reproducible-and-parameterized-reportswindows-10-anniversary-update" class="title-slide slide level1 center" data-background-color="#051525">
+<h1>reproducible and <br> parameterized reports<img data-src="https://em-content.zobj.net/source/microsoft/74/water-wave_1f30a.png" style="transform: translate(0px, 20px);" alt="Windows 10 Anniversary Update" width="80"></h1>
 <p>frank aragona</p>
 </section>
 
@@ -433,13 +436,45 @@
 
 <section id="quarto" class="title-slide slide level1 center">
 <h1>Quarto</h1>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <iframe width="600" height="600" src="https://intro2r.library.duke.edu/viz.html" title="Quarto Documentation" class="myframe2"></iframe>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <iframe width="600" height="600" src="https://nrennie.rbind.io/blog/making-pretty-pdf-quarto/" title="Quarto PDF" class="myframe2"></iframe>
+</div>
+</div>
+</div>
+</section>
+
+<section id="formats" class="title-slide slide level1 center">
+<h1>Formats</h1>
+<div class="columns">
+<div class="column" style="width:60%;">
+<iframe width="700" height="600" src="https://notebooks-now.github.io/submission-quarto-full/" title="Manuscript" class="myframe2"></iframe>
+</div><div class="column" style="width:40%;">
+<div class="codewindow quarto">
+<p>_quarto.yml</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1" data-code-line-numbers="7-17"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">project</span><span class="kw">:</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> manuscript</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a></span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="fu">manuscript</span><span class="kw">:</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="at">  </span><span class="fu">article</span><span class="kw">:</span><span class="at"> index.qmd</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a></span>
+<span id="cb1-7"><a href="#cb1-7"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="at">    </span><span class="fu">format-links</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">pdf</span><span class="kw">,</span><span class="at"> docx</span><span class="kw">]</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a><span class="at">  </span><span class="fu">docx</span><span class="kw">:</span><span class="at"> default</span></span>
+<span id="cb1-11"><a href="#cb1-11"></a><span class="at">  </span><span class="fu">jats</span><span class="kw">:</span><span class="at"> default</span></span>
+<span id="cb1-12"><a href="#cb1-12"></a><span class="at">  </span><span class="fu">pdf</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb1-13"><a href="#cb1-13"></a><span class="at">    </span><span class="fu">output-file</span><span class="kw">:</span><span class="at"> </span><span class="st">"idk"</span></span>
+<span id="cb1-14"><a href="#cb1-14"></a><span class="at">  </span><span class="fu">agu-pdf</span><span class="kw">:</span></span>
+<span id="cb1-15"><a href="#cb1-15"></a><span class="at">    </span><span class="fu">output-file</span><span class="kw">:</span><span class="at"> </span><span class="st">"agu"</span></span>
+<span id="cb1-16"><a href="#cb1-16"></a><span class="at">  </span><span class="fu">jasa-pdf</span><span class="kw">:</span></span>
+<span id="cb1-17"><a href="#cb1-17"></a><span class="at">    </span><span class="fu">output-file</span><span class="kw">:</span><span class="at"> </span><span class="st">"jasa"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </div>
 </div>
 </div>
@@ -447,74 +482,25 @@
 
 <section id="parameterized-reports" class="title-slide slide level1 center">
 <h1>Parameterized Reports</h1>
-<div class="sourceCode cell-code" id="cb1" data-code-line-numbers="|10|11|11|13-14|15-16|17-18"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href=""></a><span class="fu">project</span><span class="kw">:</span></span>
-<span id="cb1-2"><a href=""></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> manuscript</span></span>
-<span id="cb1-3"><a href=""></a></span>
-<span id="cb1-4"><a href=""></a><span class="fu">manuscript</span><span class="kw">:</span></span>
-<span id="cb1-5"><a href=""></a><span class="at">  </span><span class="fu">article</span><span class="kw">:</span><span class="at"> index.qmd</span></span>
-<span id="cb1-6"><a href=""></a></span>
-<span id="cb1-7"><a href=""></a><span class="fu">format</span><span class="kw">:</span></span>
-<span id="cb1-8"><a href=""></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
-<span id="cb1-9"><a href=""></a><span class="at">    </span><span class="fu">format-links</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">pdf</span><span class="kw">,</span><span class="at"> docx</span><span class="kw">]</span></span>
-<span id="cb1-10"><a href=""></a><span class="at">  </span><span class="fu">docx</span><span class="kw">:</span><span class="at"> default</span></span>
-<span id="cb1-11"><a href=""></a><span class="at">  </span><span class="fu">jats</span><span class="kw">:</span><span class="at"> default</span></span>
-<span id="cb1-12"><a href=""></a><span class="at">  </span><span class="fu">pdf</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb1-13"><a href=""></a><span class="at">    </span><span class="fu">output-file</span><span class="kw">:</span><span class="at"> </span><span class="st">"idk"</span></span>
-<span id="cb1-14"><a href=""></a><span class="at">  </span><span class="fu">agu-pdf</span><span class="kw">:</span></span>
-<span id="cb1-15"><a href=""></a><span class="at">    </span><span class="fu">output-file</span><span class="kw">:</span><span class="at"> </span><span class="st">"agu"</span></span>
-<span id="cb1-16"><a href=""></a><span class="at">  </span><span class="fu">jasa-pdf</span><span class="kw">:</span></span>
-<span id="cb1-17"><a href=""></a><span class="at">    </span><span class="fu">output-file</span><span class="kw">:</span><span class="at"> </span><span class="st">"jasa"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<iframe width="500" height="600" src="https://notebooks-now.github.io/submission-quarto-full/" title="Manuscript" class="myframe2"></iframe>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<p>some text here in this column</p>
-</div>
-</div>
-<div class="quarto-layout-row">
-<div class="smallframe quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 
-</div>
-</div>
-</div>
+<img data-src="images/params.png" class="r-stretch quarto-figure-center"><p class="caption">Source: <a href="https://jadeyryan.quarto.pub/rladies-abuja-quarto-params/materials.html" class="blue">Parameterized Reporting with Quarto</a> by Jadey Ryan</p></section>
+
+<section id="section" class="title-slide slide level1 center">
+<h1></h1>
+
 </section>
 
 <section id="idk" class="title-slide slide level1 center">
 <h1>idk</h1>
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href=""></a>random <span class="ot">&lt;-</span> <span class="st">"hi"</span></span>
-<span id="cb2-2"><a href=""></a>project<span class="sc">:</span></span>
-<span id="cb2-3"><a href=""></a>  type<span class="sc">:</span> manuscript</span>
-<span id="cb2-4"><a href=""></a></span>
-<span id="cb2-5"><a href=""></a>manuscript<span class="sc">:</span></span>
-<span id="cb2-6"><a href=""></a>  article<span class="sc">:</span> index.qmd</span>
-<span id="cb2-7"><a href=""></a></span>
-<span id="cb2-8"><a href=""></a>format<span class="sc">:</span></span>
-<span id="cb2-9"><a href=""></a>  html<span class="sc">:</span></span>
-<span id="cb2-10"><a href=""></a>    format<span class="sc">-</span>links<span class="sc">:</span> [pdf, docx]</span>
-<span id="cb2-11"><a href=""></a>  docx<span class="sc">:</span> default</span>
-<span id="cb2-12"><a href=""></a>  jats<span class="sc">:</span> default</span>
-<span id="cb2-13"><a href=""></a>  pdf<span class="sc">:</span> </span>
-<span id="cb2-14"><a href=""></a>    output<span class="sc">-</span>file<span class="sc">:</span> <span class="st">"idk"</span></span>
-<span id="cb2-15"><a href=""></a>  agu<span class="sc">-</span>pdf<span class="sc">:</span></span>
-<span id="cb2-16"><a href=""></a>    output<span class="sc">-</span>file<span class="sc">:</span> <span class="st">"agu"</span></span>
-<span id="cb2-17"><a href=""></a>  jasa<span class="sc">-</span>pdf<span class="sc">:</span></span>
-<span id="cb2-18"><a href=""></a>    output<span class="sc">-</span>file<span class="sc">:</span> <span class="st">"jasa"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div class="smallframe quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-
+<div class="cell container">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="co"># Load Libraries</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb2-3"><a href="#cb2-3"></a></span>
+<span id="cb2-4"><a href="#cb2-4"></a>df <span class="ot">&lt;-</span> airquality <span class="sc">|&gt;</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a>  <span class="fu">filter</span>(hi <span class="sc">==</span> <span class="dv">5</span> <span class="sc">&amp;</span> no <span class="sc">==</span> <span class="st">"string"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="smallframe quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-
-</div>
-</div>
-</div>
-<div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
-</div>
 </div>
 </section>
     </div>
@@ -528,6 +514,7 @@
   <script src="index_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
   <script src="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
   <script src="index_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-codewindow/codewindow.js"></script>
   <script src="index_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
@@ -720,7 +707,7 @@
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, RevealCodewindow, QuartoSupport,
 
           RevealMath,
           RevealNotes,
@@ -843,24 +830,6 @@
         // clear code selection
         e.clearSelection();
       });
-        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-        var mailtoRegex = new RegExp(/^mailto:/);
-          var filterRegex = new RegExp('/' + window.location.host + '/');
-        var isInternal = (href) => {
-            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-        }
-        // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
-        for (var i=0; i<links.length; i++) {
-          const link = links[i];
-          if (!isInternal(link.href)) {
-            // undo the damage that might have been done by quarto-nav.js in the case of
-            // links that we want to consider external
-            if (link.dataset.originalHref !== undefined) {
-              link.href = link.dataset.originalHref;
-            }
-          }
-        }
       function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
@@ -897,11 +866,7 @@
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          if (note) {
-            return note.innerHTML;
-          } else {
-            return "";
-          }
+          return note.innerHTML;
         });
       }
       const findCites = (el) => {

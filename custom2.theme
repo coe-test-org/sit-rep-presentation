@@ -1,8 +1,8 @@
 {
-    "text-color": "#e9ecef",
-    "background-color": "#051525",
-    "line-number-color": "#e9ecef",
-    "line-number-background-color": "#051525",
+    "text-color": "#051525",
+    "background-color": "#dae9f9",
+    "line-number-color": "#051525",
+    "line-number-background-color": "#dae9f9",
     "text-styles": {
         "Alert": {
             "text-color": "#ffff00",
@@ -110,7 +110,7 @@
             "underline": false
         },
         "Function": {
-            "text-color": "#edd093",
+            "text-color": "#051525",
             "background-color": null,
             "bold": true,
             "italic": false,

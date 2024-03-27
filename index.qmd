@@ -1,20 +1,22 @@
 ---
 format:
   revealjs:
-    highlight-style: custom.theme
+    # highlight-style: custom.theme
     width: 1300
     controls: true
     transition: slide
     theme: [default, styles.scss]
     navigation-mode: vertical
     chalkboard: true
+revealjs-plugins:
+  - codewindow
 knitr: true
 echo: true
 eval: false
 embed-resources: false
 ---
 
-# reproducible and <br/> parameterized reports 🌊 {data-background-color="#051525"}
+# reproducible and <br/> parameterized reports![Windows 10 Anniversary Update](https://em-content.zobj.net/source/microsoft/74/water-wave_1f30a.png){alt="Windows 10 Anniversary Update" style="transform: translate(0px, 20px);" width="80"} {data-background-color="#051525"}
 
 frank aragona
 
@@ -22,9 +24,9 @@ frank aragona
 
 ::: incremental
 -   Multiple COE sites
--   One or more reports 
-    - in various formats (Word, HTML, PDF)
-    - [and multiple styles of those formats]{.fragment .blue}
+-   One or more reports
+    -   in various formats (Word, HTML, PDF)
+    -   [and multiple styles of those formats]{.fragment .blue}
 -   Embeded computations
 -   Avoid wasting time (copying, running code, editing, etc)
 :::
@@ -62,19 +64,21 @@ frank aragona
 ```
 :::
 
-# Parameterized Reports
+# Formats
 
-
-::: {layout-ncol="2"}
-
+::: columns
+::: {.column width="60%"}
 ```{=html}
-<iframe width="500" height="600" src="https://notebooks-now.github.io/submission-quarto-full/" title="Manuscript" class="myframe2"></iframe>
+<iframe width="700" height="600" src="https://notebooks-now.github.io/submission-quarto-full/" title="Manuscript" class="myframe2"></iframe>
 ```
-some text here in this column
+:::
 
-:::{.smallframe}
+::: {.column width="40%"}
+::: {.codewindow .quarto}
+\_quarto.yml
+
 ```{yaml}
-#| code-line-numbers: "|10|11|11|13-14|15-16|17-18"
+#| code-line-numbers: "7-17"
 project:
   type: manuscript
 
@@ -93,43 +97,23 @@ format:
   jasa-pdf:
     output-file: "jasa"
 ```
-
+:::
+:::
 :::
 
-:::
+# Parameterized Reports
+
+![Source: [Parameterized Reporting with Quarto](https://jadeyryan.quarto.pub/rladies-abuja-quarto-params/materials.html){.blue} by Jadey Ryan](images/params.png)
+
+# 
 
 # idk
 
-::: {layout-ncol="2"}
+```{r }
+#| classes: container
+# Load Libraries
+library(dplyr)
 
-:::{.smallframe}
-```{r}
-random <- "hi"
+df <- airquality |>
+  filter(hi == 5 & no == "string")
 ```
-:::
-
-:::{.smallframe}
-```{yaml}
-#| code-line-numbers: "|10|11|11|13-14|15-16|17-18"
-project:
-  type: manuscript
-
-manuscript:
-  article: index.qmd
-
-format:
-  html:
-    format-links: [pdf, docx]
-  docx: default
-  jats: default
-  pdf: 
-    output-file: "idk"
-  agu-pdf:
-    output-file: "agu"
-  jasa-pdf:
-    output-file: "jasa"
-```
-
-:::
-
-:::
